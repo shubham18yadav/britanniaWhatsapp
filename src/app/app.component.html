@@ -1,21 +1,61 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <div class="bg">
 
-<router-outlet></router-outlet>
+    <div class="header">
+      <div class="row navMarginTop">
+        <div class="col">
+          <img src="assets/img/left-arrow.png" class="iconBack">
+        </div>
+        <div class="col">
+          <img src="assets/img/pp.jpeg" width="30" height="30" class="rounded-circle profileImg" alt="">
+        </div>
+        <div class="col">
+          <p class="titel">Shubh</p>
+          <!-- <p class="subTitel">tap here for contect info</p> -->
+        </div>
+        <div class="col">
+          <img src="assets/img/video-camera.png" class="iconCamara">
+        </div>
+        <div class="col">
+          <img src="assets/img/phone-call-button.png" class="iconCall">
+        </div>
+        <div class="col">
+          <img src="assets/img/more.png" class="iconMore">
+
+        </div>
+      </div>
+    </div>
+    <div class="row chatMarginTop">
+      <div class="col-12">
+        <div class="bubbleIn">
+          <div class="text"> hello</div>
+          <div class="textTiming">12:40 pm</div>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div class="bubble">
+          <div class="text">hii</div>
+          <div class="textTiming">12:41 pm</div>
+        </div>
+      </div>
+      <div class="col-12">
+          <div class="bubbleIn">
+            <div class="text"> how are you dear</div>
+            <div class="textTiming">12:40 pm</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="form-group has-error has-feedback">
+        <div class="col-sm-10">
+          <input type="text" class="input" placeholder="Type a message">
+          <img src="assets/img/happy.png" class="inputIcone">
+          <img src="assets/img/paperclip-document-outline.png" class="paperClip">
+        </div>
+      </div>
+      <img src="assets/img/send.png" class="sendIcone">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,240 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.iconBack{
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    margin-left: 8px;
+
+}
+.profileImg{
+    margin-top: 15px;
+}
+.titel{
+    color: white;
+    margin-top: 19px;
+
+}
+.subTitel{
+    margin-top: -20px;
+    font-size: 10px;
+    color: white;
+
+}
+.iconCamara{
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    float: right;
+
+
+}
+.iconCall{
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    float: right;
+
+
+}
+
+.iconMore{
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    float: right;
+
+}
+.header{
+    background-color:#128c7e;
+    position: fixed;
+    top: 0;
+    width: 73%;
+    z-index: 2;
+}
+.footer{
+    position: fixed;
+    bottom: -30px;
+    width: 72%;
+ 
+ }
+.bg{
+    background-image: url('../assets/img/bg.png');
+    width: 100%;
+    height: 734px;
+    margin-top: -10px;
+}
+.input {
+    display: block;
+    width: 118%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 3.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-left: -1%;
+    padding-left: 5%;
+
+}
+.inputIcone{
+    margin-top: -7%;
+    width: 23px;
+}
+.sendIcone{
+    width: 40px;
+    margin-top: -7.3%;
+    float: right;
+    margin-right: 0.5%;
+}
+.paperClip{
+    float: right;
+    margin-right: -15%;
+    margin-top: -3.5%;
+    width: 23px;
+}
+
+.bubble {
+    position: relative;
+    background: #dcf8c6;
+    color: #000000;
+    min-width: 100px;
+    max-width: 290px;
+    min-height: 35px;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding: 2px;
+    margin-top: 2%;
+    float: right;
+    margin-right: 1%;
+
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 23px 26px 0 0;
+    border-color: #dcf8c6 transparent transparent transparent;
+    top: 12px;
+    right: -11px;
+    margin-top: -11.5px;
+}
+
+.bubbleIn {
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+    min-width: 100px;
+    max-width: 290px;
+    min-height: 35px;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding: 2px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.bubbleIn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 26px 23px 0;
+    border-color: transparent #ffffff transparent transparent;
+    top: 12px;
+    left: -11px;
+    margin-top: -11.5px;
+}
+
+.myContainer {
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text{
+    margin-left: 14%;
+}
+.textTiming{
+    font-size: 10px;
+    color: #7d7d7d;
+    float: right;
+    margin: -10px;
+    margin-right: 3%;
+    margin-bottom: 1px;
+
+}
+.chatMarginTop{
+    margin-top: 60px;
+    margin-right:0;
+}
+.chatMarginTop .col-12{
+    padding-right:0;
+}
+/* ****************************************** */
+@media(max-width:414px){
+    .profileImg{
+        margin-left: -35px;
+    }
+    .titel{
+        margin-left: -67px;
+    }
+    .subTitel{
+        margin-left: -67px;
+    }
+    .input{
+        width: 90%;
+        margin-left: -2%;
+        padding-left: 10%;
+    }
+    .inputIcone{
+        margin-top: -16%;
+    }
+    .sendIcone{
+        margin-right: 2%;
+        margin-top: -19%;
+
+    }
+    .paperClip{
+    margin-right: 16%;
+    margin-top: -8%;
+    }
+    .container {
+        padding: 0;
+    }
+    .bubble {
+        margin-right: 3%;
+
+    }
+    .bubbleIn{
+        margin-left: 3%;
+
+    }
+    .footer {
+        position: fixed;
+        width: 100%;
+        bottom: -5%;
+
+    }
+    .header{
+        width: 100%;
+    }
+    .bg{
+        margin-top: -2px;
+
+    }
+    
+}
