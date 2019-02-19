@@ -1,0 +1,7 @@
+
+{
+    "/downloadatabaseapi/*": {
+        "target": "http://52.66.214.108:9000",
+        "security": false
+    }
+}

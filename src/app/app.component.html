@@ -26,36 +26,36 @@
       </div>
     </div>
     <div class="row chatMarginTop">
-      <div class="col-12">
+      <!-- <div class="col-12">
         <div class="bubbleIn">
           <div class="text"> hello</div>
           <div class="textTiming">12:40 pm</div>
         </div>
-      </div>
+      </div> -->
       
-      <div class="col-12">
-        <div class="bubble">
-          <div class="text">hii</div>
-          <div class="textTiming">12:41 pm</div>
+      <div class="col-12" *ngFor="let data of dataListMessage" >
+        <div class="bubble" *ngIf="data.type == 'question'">
+          <div class="text">{{data.question}}</div>
+          <div class="textTiming">{{ data.date | date:' h:mm a'}}</div>
+        </div>
+        <div class="bubbleIn" *ngIf="data.type == 'answer'">
+          <div class="text"> {{data.answer}}</div>
+          <div class="textTiming">{{ data.date | date:' h:mm a'}}</div>
         </div>
       </div>
-      <div class="col-12">
-          <div class="bubbleIn">
-            <div class="text"> how are you dear</div>
-            <div class="textTiming">12:40 pm</div>
-          </div>
-        </div>
+      <!-- <div class="col-12" *ngFor="let data of dataList">
+          
+        </div> -->
     </div>
-
     <div class="footer">
       <div class="form-group has-error has-feedback">
         <div class="col-sm-10">
-          <input type="text" class="input" placeholder="Type a message">
+          <input type="text" class="input" placeholder="Type a message" #smsId>
           <img src="assets/img/happy.png" class="inputIcone">
           <img src="assets/img/paperclip-document-outline.png" class="paperClip">
         </div>
       </div>
-      <img src="assets/img/send.png" class="sendIcone">
+      <img src="assets/img/send.png" class="sendIcone" (click)='Answer(smsId.value)'>
     </div>
   </div>
 </div>
