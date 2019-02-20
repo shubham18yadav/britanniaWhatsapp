@@ -1,4 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.container{
+    position: relative;
+}
 
 .iconBack{
     width: 20px;
@@ -52,19 +55,19 @@
     width: 73%;
     z-index: 2;
 }
-.footer{
+/* .footer{
     position: fixed;
     bottom: -30px;
     width: 72%;
  
- }
+ } */
 .bg{
     background-image: url('../assets/img/bg.png');
     width: 100%;
     height: 734px;
     margin-top: -10px;
 }
-.input {
+/* .input {
     display: block;
     width: 118%;
     height: calc(2.25rem + 2px);
@@ -81,23 +84,23 @@
     margin-left: -1%;
     padding-left: 5%;
 
-}
-.inputIcone{
+} */
+/* .inputIcone{
     margin-top: -7%;
     width: 23px;
-}
-.sendIcone{
+} */
+/* .sendIcone{
     width: 40px;
     margin-top: -7.3%;
     float: right;
     margin-right: 0.5%;
-}
-.paperClip{
+} */
+/* .paperClip{
     float: right;
     margin-right: -15%;
     margin-top: -3.5%;
     width: 23px;
-}
+} */
 
 .bubble {
     position: relative;
@@ -184,6 +187,42 @@
 .chatMarginTop .col-12{
     padding-right:0;
 }
+.footer{
+    position: absolute;
+    bottom: 8px;
+    right: 41px;
+    left: 25px;
+    width: 100%;
+    display: flex;
+}
+.testBox{
+    position: relative;
+    width: 92%;
+}
+.footer input{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+.inputIcone{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 24px;
+}
+.paperClip{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+}
+.sendIcone{
+    width: 30px;
+    height: 30px;
+    margin-left: 9px;
+    margin-top: 3px;
+}
 /* ****************************************** */
 @media(max-width:414px){
     .profileImg{
@@ -195,23 +234,23 @@
     .subTitel{
         margin-left: -67px;
     }
-    .input{
+    /* .input{
         width: 90%;
         margin-left: -2%;
         padding-left: 10%;
-    }
-    .inputIcone{
+    } */
+    /* .inputIcone{
         margin-top: -16%;
-    }
-    .sendIcone{
+    } */
+    /* .sendIcone{
         margin-right: 2%;
         margin-top: -19%;
 
-    }
-    .paperClip{
+    } */
+    /* .paperClip{
     margin-right: 16%;
     margin-top: -8%;
-    }
+    } */
     .container {
         padding: 0;
     }
@@ -225,10 +264,9 @@
     }
     .footer {
         position: fixed;
-        width: 100%;
-        bottom: -5%;
-
+        left: 0;
     }
+    
     .header{
         width: 100%;
     }

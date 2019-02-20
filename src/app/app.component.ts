@@ -24,7 +24,7 @@ export class AppComponent {
 
   Answer(question) {
     console.log(question);
-    console.log("yess i am working");
+    console.log("yess i am basted");
     this.service.getAnswer(question).subscribe(
       response => {
         this.dataList = response;
