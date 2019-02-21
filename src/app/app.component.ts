@@ -46,5 +46,8 @@ export class AppComponent {
         console.log(error);
       }
     );
+    // window.scrollTo(200000,document.body.scrollHeight);
+
+    
   }
 }

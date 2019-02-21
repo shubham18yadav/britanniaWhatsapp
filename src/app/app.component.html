@@ -7,10 +7,10 @@
           <img src="assets/img/left-arrow.png" class="iconBack">
         </div>
         <div class="col">
-          <img src="assets/img/pp.jpeg" width="30" height="30" class="rounded-circle profileImg" alt="">
+          <img src="assets/img/britannia-industries-logo-vector.png" width="30" height="30" class="rounded-circle profileImg" alt="">
         </div>
         <div class="col">
-          <p class="titel">Shubh</p>
+          <p class="titel">Britannia</p>
           <!-- <p class="subTitel">tap here for contect info</p> -->
         </div>
         <div class="col">
@@ -32,7 +32,21 @@
           <div class="textTiming">12:40 pm</div>
         </div>
       </div> -->
-      
+      <div class="col-12">
+          <div class="bubbleIn">
+              <div class="text">Good Morning!<br>
+                                How may I assist you?</div>
+              <div class="textTiming">{{now | date:' h:mm a'}}</div>
+              <!-- <img src="https://www.lds.org/bc/content/ldsorg/create/wallpaper/2017-january/MountainsinWinter_Thumbnail.jpg" > -->
+            </div>
+      </div>
+      <div class="col-12" *ngIf="smsId.value == 'ye'">
+          <div class="bubbleIn">
+              <img src="https://www.lds.org/bc/content/ldsorg/create/wallpaper/2017-january/MountainsinWinter_Thumbnail.jpg" >
+              <div class="textTiming">{{now | date:' h:mm a'}}</div>
+             
+            </div>
+      </div>
       <div class="col-12" *ngFor="let data of dataListMessage" >
         <div class="bubble" *ngIf="data.type == 'question'">
           <div class="text">{{data.question}}</div>
